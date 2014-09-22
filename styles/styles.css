@@ -12,9 +12,9 @@ body {margin:0;font-family:Nunito,Arial;font-size:1.1em;color:#333;}
 	.leftColumn p {font-size:36px;padding:.5em 0 0 0;margin:0;}
 @media screen and (min-width:992px)
 {
-	.leftColumn{position:fixed;top:0;left:0;width:18.75em;height:100%;text-align:center;}
+	.leftColumn{position:fixed;top:0;left:0;width:18.75em;height:100%;}
 		.leftImage{float:none;margin-left:0;margin-top:3em;}
-		.leftDescription{float:none;margin-left:0;}
+		.leftDescription{float:none;margin:2em 0 0 0;}
 		.leftColumn p {font-size:20px;padding:30px 0 0 0;margin:0;}
 	.rightColumn{margin-left:19.5em;}
 }
@@ -28,3 +28,4 @@ a:hover {text-decoration:underline;}
 
 img {max-width:100%;}
 sup {vertical-align:top;line-height:100%; }
+i {margin-right:.5em;}
