@@ -1,6 +1,14 @@
-body {font-family:Arial;width:80%;margin:0 auto;}
 
-h1 {font-size:22px;}
-h2 {font-size:16px;}
-p {font-size:14px;}
+*, *:before, *:after{-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
+body{margin:0;font-family:Arial;}
+.rightColumn, .leftColumn {padding:1.25em;}
+.leftColumn {color:#fff;}
+.leftColumn{background-color:#3D4349;text-align:center;}
+@media screen and (min-width:47.5em)
+{
+	.rightColumn{margin-left:19.5em;}
+	.leftColumn{position:fixed;top:0;left:0;width:18.75em;height:100%;text-align:left;}
+}
+
+img {max-width:100%;}
 sup {vertical-align:top;line-height:100%; }
