@@ -2,29 +2,30 @@
 @import url(http://fonts.googleapis.com/css?family=Nunito:300);
 
 *, *:before, *:after{-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
-body {margin:0;font-family:Nunito,Arial;color:#333;}
-
-/* layout */
-.rightColumn, .leftColumn {padding:1.25em;}
-.leftColumn{background-color:#3D4349;color:#fff;padding-left:2em;padding-top:1em;}
-	.leftDescription{float:left;margin-left:3em;}
-	.leftColumn p {padding:.5em 0 0 0;margin:0;}
-@media screen and (min-width:992px)
-{
-	.leftColumn{position:fixed;top:0;left:0;width:18.75em;height:100%;}
-		.leftDescription{float:none;margin:2em 0 0 0;}
-		.leftColumn p {padding:30px 0 0 0;margin:0;}
-	.rightColumn{margin-left:19.5em;}
-}
+body {margin:0;font-family:Nunito,Arial;color:#333;font-size:100%;}
 
 h1 {font-size:36px;}
 p {font-size:20px;}
 a {color:#2571B8;text-decoration:none;}
 a:hover {text-decoration:underline;}
+img {max-width:100%;}
+sup {vertical-align:top;line-height:100%; }
+i {margin-right:.5em;}
+
+/* layout */
+.rightColumn {padding:20px;}
+.leftColumn{background-color:#3D4349;color:#fff;padding:20px 0 0 40px;}
+	.leftDescription{float:left;margin-left:30px;}
+	.leftColumn p {padding:0 0 10px;margin:0;}
+
+@media screen and (min-width:992px)
+{
+	.leftColumn{position:fixed;top:0;left:0;width:300px;height:100%;padding:40px 0 0 10px;}
+	.leftColumn p {padding:30px 0 0 0;margin:0;}
+	.rightColumn{margin-left:320px;}
+}
+
 
 .leftColumn a {color:#fff;}
 .leftColumn a:hover {color:#2571B8;text-decoration:none;}
 
-img {max-width:100%;}
-sup {vertical-align:top;line-height:100%; }
-i {margin-right:.5em;}
