@@ -1,14 +1,24 @@
 
+@import url(http://fonts.googleapis.com/css?family=Nunito:300);
+
 *, *:before, *:after{-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
-body{margin:0;font-family:Arial;}
+body {margin:0;font-family:Nunito,Arial;font-size:1.1em;color:#333;}
+
+/* layout */
 .rightColumn, .leftColumn {padding:1.25em;}
-.leftColumn {color:#fff;}
-.leftColumn{background-color:#3D4349;text-align:center;}
+.leftColumn{background-color:#3D4349;color:#fff;padding-left:2em;}
+.leftImage{float:left;margin-left:3em;}
+.leftDescription{float:left;margin-left:3em;padding-top:2em;}
+
 @media screen and (min-width:992px)
 {
+	.leftColumn{position:fixed;top:0;left:0;width:18.75em;height:100%;text-align:center;}
+	.leftImage{float:none;margin-left:0;margin-top:3em;}
+	.leftDescription{float:none;margin-left:0;}
 	.rightColumn{margin-left:19.5em;}
-	.leftColumn{position:fixed;top:0;left:0;width:18.75em;height:100%;text-align:left;}
 }
+
+h1 {font-size:33px;}
 
 img {max-width:100%;}
 sup {vertical-align:top;line-height:100%; }
