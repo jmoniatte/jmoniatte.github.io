@@ -8,7 +8,7 @@ body {margin:0;font-family:Nunito,Arial;font-size:1.1em;color:#333;}
 .rightColumn, .leftColumn {padding:1.25em;}
 .leftColumn{background-color:#3D4349;color:#fff;padding-left:2em;}
 	.leftImage{float:left;margin-left:3em;}
-	.leftDescription{float:left;margin-left:3em;padding-top:2em;}
+	.leftDescription{float:left;margin-left:3em;}
 	.leftColumn p {font-size:36px;}
 @media screen and (min-width:992px)
 {
