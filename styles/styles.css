@@ -2,24 +2,23 @@
 @import url(http://fonts.googleapis.com/css?family=Nunito:300);
 
 *, *:before, *:after{-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
-body {margin:0;font-family:Nunito,Arial;font-size:1.1em;color:#333;}
+body {margin:0;font-family:Nunito,Arial;color:#333;}
 
 /* layout */
 .rightColumn, .leftColumn {padding:1.25em;}
 .leftColumn{background-color:#3D4349;color:#fff;padding-left:2em;padding-top:1em;}
-	.leftImage{float:left;margin-left:3em;}
 	.leftDescription{float:left;margin-left:3em;}
-	.leftColumn p {font-size:36px;padding:.5em 0 0 0;margin:0;}
+	.leftColumn p {padding:.5em 0 0 0;margin:0;}
 @media screen and (min-width:992px)
 {
 	.leftColumn{position:fixed;top:0;left:0;width:18.75em;height:100%;}
-		.leftImage{float:none;margin-left:0;margin-top:3em;}
 		.leftDescription{float:none;margin:2em 0 0 0;}
-		.leftColumn p {font-size:20px;padding:30px 0 0 0;margin:0;}
+		.leftColumn p {padding:30px 0 0 0;margin:0;}
 	.rightColumn{margin-left:19.5em;}
 }
 
 h1 {font-size:36px;}
+p {font-size:20px;}
 a {color:#2571B8;text-decoration:none;}
 a:hover {text-decoration:underline;}
 
