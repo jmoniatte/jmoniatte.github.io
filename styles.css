@@ -6,16 +6,16 @@ body {margin:0;font-family:Nunito,Arial;font-size:1.1em;color:#333;}
 
 /* layout */
 .rightColumn, .leftColumn {padding:1.25em;}
-.leftColumn{background-color:#3D4349;color:#fff;padding-left:2em;}
+.leftColumn{background-color:#3D4349;color:#fff;padding-left:2em;padding-top:1em;}
 	.leftImage{float:left;margin-left:3em;}
 	.leftDescription{float:left;margin-left:3em;}
-	.leftColumn p {font-size:36px;}
+	.leftColumn p {font-size:36px;padding:.5em 0 0 0;margin:0;}
 @media screen and (min-width:992px)
 {
 	.leftColumn{position:fixed;top:0;left:0;width:18.75em;height:100%;text-align:center;}
 		.leftImage{float:none;margin-left:0;margin-top:3em;}
 		.leftDescription{float:none;margin-left:0;}
-		.leftColumn p {font-size:20px;}
+		.leftColumn p {font-size:20px;padding:30px 0 0 0;margin:0;}
 	.rightColumn{margin-left:19.5em;}
 }
 
