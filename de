@@ -5,11 +5,11 @@
 		<title>Particulier vend maison individuelle à Cronenbourg</title>
 		<meta name="description" content="RARE ! Particulier vend maison individuelle à Strasbourg Cronenbourg. Proftez d'un grand jardin à moins de 10 minutes du centre ville." />
 		<meta name="robots" content="index,follow">
-		<link rel="stylesheet" type="text/css" media="all" href="../styles/styles.css">
-		<link rel="stylesheet" type="text/css" media="all" href="../styles/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" media="all" href="styles/styles.css">
+		<link rel="stylesheet" type="text/css" media="all" href="styles/font-awesome.min.css">
 
-		<script type="text/javascript" src="../scripts/jquery-1.11.1.min.js"></script>
-		<script type="text/javascript" src="../scripts/slick.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="scripts/slick.min.js"></script>
 
 
 		<script>
@@ -34,18 +34,18 @@
 			<h1>Maison individuelle de caractère</h1>
 			<p><span class="header">Rare opportunité !</span> Particulier vend maison individuelle dans le quartier résidentiel Saint-Florent à Cronenbourg. Maison de maître de 6 pièces sur 160m<sup>2</sup>. Terrain arboré et clos de 6 ares.</p>
 			<div class="slider">
-				<div><img src="../photos/101.jpg"></div>
-				<div><img src="../photos/102.jpg"></div>
-				<div><img src="../photos/103.jpg"></div>
-				<div><img src="../photos/104.jpg"></div>
-				<div><img src="../photos/105.jpg"></div>
-				<div><img src="../photos/106.jpg"></div>
-				<div><img src="../photos/107.jpg"></div>
-				<div><img src="../photos/108.jpg"></div>
-				<div><img src="../photos/201.jpg"></div>
-				<div><img src="../photos/202.jpg"></div>
-				<div><img src="../photos/203.jpg"></div>
-				<div><img src="../photos/204.jpg"></div>
+				<div><img src="photos/101.jpg"></div>
+				<div><img src="photos/102.jpg"></div>
+				<div><img src="photos/103.jpg"></div>
+				<div><img src="photos/104.jpg"></div>
+				<div><img src="photos/105.jpg"></div>
+				<div><img src="photos/106.jpg"></div>
+				<div><img src="photos/107.jpg"></div>
+				<div><img src="photos/108.jpg"></div>
+				<div><img src="photos/201.jpg"></div>
+				<div><img src="photos/202.jpg"></div>
+				<div><img src="photos/203.jpg"></div>
+				<div><img src="photos/204.jpg"></div>
 			</div>
 			<script type="text/javascript" charset="utf-8">
 				$(document).ready(function()
