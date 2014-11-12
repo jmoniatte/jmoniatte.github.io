@@ -7,6 +7,7 @@ body {margin:0;font-family:Nunito,Arial;color:#333;font-size:100%;}
 h1 {font-size:36px;margin-top:30px;}
 p, ul {font-size:18px;margin:10px 0;}
 span.header {font-weight:bold;}
+hr {height:1px;background-color:#ccc;border-width:0px;margin:20px 0;width:100%;}
 
 a {color:#2571B8;text-decoration:none;}
 a:hover {text-decoration:underline;}
