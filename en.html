@@ -21,67 +21,104 @@
 		</script>
 	</head>
 	<body>
-
-		<div class="leftColumn">
-			<div class="leftTranslate">
-				<p style="color:#999;">English</p>
-				<p><a href="/">Français</a></p>
+		<div id="wrap">
+			<div id="nav">
+				<div id="navContact"><a href="#contact">Contact<br>06 12 92 06 90</a></div>
+				<div id="navMap"><a href="#map">33 rue Saint-Florent</a><br>Strasbourg</div>
+				<div style="clear:both;"></div>
 			</div>
+			<div id="content">
+				<h1>House for sale in Cronenbourg</h1>
+				<table id="sliderWrap">
+					<tr>
+						<td id="sliderPrev" class="sliderCtrl"><i class="fa fa-angle-left"></i></td>
+						<td id="sliderMain">
+							<div class="slider">
+								<div><img src="photos/20141116/101.jpg"></div>
+								<div><img src="photos/20141116/102.jpg"></div>
+								<div><img src="photos/20141116/103.jpg"></div>
+								<div><img src="photos/20141116/104.jpg"></div>
+								<div><img src="photos/20141116/105.jpg"></div>
+								<div><img src="photos/20141116/106.jpg"></div>
+								<div><img src="photos/20141116/107.jpg"></div>
+								<div><img src="photos/20141116/108.jpg"></div>
+								<div><img src="photos/20141116/109.jpg"></div>
+								<div><img src="photos/20141116/201.jpg"></div>
+								<div><img src="photos/20141116/202.jpg"></div>
+								<div><img src="photos/20141116/203.jpg"></div>
+								<div><img src="photos/20141116/204.jpg"></div>
+								<div><img src="photos/20141116/205.jpg"></div>
+								<div><img src="photos/20141116/206.jpg"></div>
+								<div><img src="photos/20141116/207.jpg"></div>
+								<div><img src="photos/20141116/208.jpg"></div>
+								<div><img src="photos/20141116/209.jpg"></div>
+								<div><img src="photos/20141116/210.jpg"></div>
+								<div><img src="photos/20141116/211.jpg"></div>
+							</div>
+						</td>
+						<td id="sliderNext" class="sliderCtrl"><i class="fa fa-angle-right"></i></div>
+						</td>
+					</tr>
+				</table>
 
-			<p><i class="fa fa-fw fa-map-marker"></i> <a href="#map">33, rue Saint-Florent</a></p>
-			<p><i class="fa fa-fw fa-envelope-o"></i> <a href="mailto:jmoniatte@gmail.com">jmoniatte@gmail.com</a></p>
-			<p><i class="fa fa-fw fa-phone"></i> <a href="tel:+33612920690">06.12.92.06.90</a></p>
-		</div>
-		<div class="rightColumn">
-			<h1>House for sale in Cronenbourg</h1>
-			<p><span class="header">Hard to find!</span> Beautiful, single-family home with 6 rooms in 160m² of living space, boasting a fully enclosed, private 6 ares garden. Ideally located in the Saint-Florent neighborhood of Cronenbourg only minutes from downtown.</p>
-			<div class="slider">
-				<div><img src="photos/20141116/101.jpg"></div>
-				<div><img src="photos/20141116/102.jpg"></div>
-				<div><img src="photos/20141116/103.jpg"></div>
-				<div><img src="photos/20141116/104.jpg"></div>
-				<div><img src="photos/20141116/105.jpg"></div>
-				<div><img src="photos/20141116/106.jpg"></div>
-				<div><img src="photos/20141116/107.jpg"></div>
-				<div><img src="photos/20141116/108.jpg"></div>
-				<div><img src="photos/20141116/109.jpg"></div>
-				<div><img src="photos/20141116/201.jpg"></div>
-				<div><img src="photos/20141116/202.jpg"></div>
-				<div><img src="photos/20141116/203.jpg"></div>
-				<div><img src="photos/20141116/204.jpg"></div>
-				<div><img src="photos/20141116/205.jpg"></div>
-				<div><img src="photos/20141116/206.jpg"></div>
-				<div><img src="photos/20141116/207.jpg"></div>
-				<div><img src="photos/20141116/208.jpg"></div>
-				<div><img src="photos/20141116/209.jpg"></div>
-				<div><img src="photos/20141116/210.jpg"></div>
-				<div><img src="photos/20141116/211.jpg"></div>
-			</div>
-			<script type="text/javascript" charset="utf-8">
-				$(document).ready(function()
-				{
-					$('.slider').slick({
-
+				<script type="text/javascript" charset="utf-8">
+					$(document).ready(function()
+					{
+						$('.slider').slick({
+							arrows: true,
+							prevArrow: $('#sliderPrev'),
+							nextArrow: $('#sliderNext')
+						});
 					});
-				});
-			</script>
-			<hr>
-			<p><span class="header">Ground floor</span> - Modern, fully-equipped kitchen, living / dining room of 40m² with spacious floors and moldings and west facing terrace, 1 office / bedroom, and 1 WC.</p>
-			<p><span class="header">1st floor</span> - 3 large bedrooms; one with balcony, bathroom with double sinks, shower and tub, a dressing area, and 1 WC. Possibility for second bathroom. </p>
-			<p><span class="header">2nd floor</span> - Attic of 40m² with 3 windows, great potential for additional living space; access by stairwell.</p>
-			<p><span class="header">Basement</span> - High ceilings and large rooms with plenty of storage, laundry room and wine cellar.</p>
-			<p><span class="header">Garden</span> - Fully enclosed 6 ares garden and with south facing terrace, separate one-car garage and private, secure parking for 2-3 additional vehicles.</p>
-			<p><span class="header">Miscellaneous</span> - New low-energy gas furnace, double-paned windows, electric shutters, electric gates and plenty of storage.</p>
-			<hr>
-			<p><span class="header">Address</span> - 33 rue Saint-Florent 67200 Strasbourg</p>
-			<p>Close to shopping, schools, and public transportation (bus and tram).</p>
-			<p>10 mins to the center and 5 mins to access A4 freeway.</p>
-			<a name="map"></a>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2638.739694305327!2d7.721844699999999!3d48.595682800000006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c82470c02ebd%3A0xbb89739f6fbfd95e!2s33+Rue+Saint-Florent%2C+67200+Strasbourg!5e0!3m2!1sfr!2sfr!4v1411420799792" width="100%" height="300" frameborder="0" style="border:0;margin-top:20px;"></iframe>
-			<hr>
-			<p><span class="header">Price</span> - 619&nbsp;000 €</p>
-			<p>For more informations or to set-up a visit, please call <a href="tel:+33612920690">06.12.92.06.90</a> or send an email to <a href="mailto:jmoniatte@gmail.com">jmoniatte@gmail.com</a>.</p>
-			<p>No agents.</p>
+				</script>
+				<hr>
+				<p><span class="header">Hard to find!</span></p>
+				<p>Beautiful, single-family home with 6 rooms in 160m² of living space, boasting a fully enclosed, private 6 ares garden. Ideally located in the Saint-Florent neighborhood of Cronenbourg only minutes from downtown.</p>
+				<p><span class="header">Price</span> - 619&nbsp;000 €</p>
+				<hr>
+				<p><span class="header">Ground floor</span> - Modern, fully-equipped kitchen, living / dining room of 40m² with spacious floors and moldings and west facing terrace, 1 office / bedroom, and 1 WC.</p>
+				<p><span class="header">1st floor</span> - 3 large bedrooms; one with balcony, bathroom with double sinks, shower and tub, a dressing area, and 1 WC. Possibility for second bathroom. </p>
+				<p><span class="header">2nd floor</span> - Attic of 40m² with 3 windows, great potential for additional living space; access by stairwell.</p>
+				<p><span class="header">Basement</span> - High ceilings and large rooms with plenty of storage, laundry room and wine cellar.</p>
+				<p><span class="header">Garden</span> - Fully enclosed 6 ares garden and with south facing terrace, separate one-car garage and private, secure parking for 2-3 additional vehicles.</p>
+				<p><span class="header">Miscellaneous</span> - New low-energy gas furnace, double-paned windows, electric shutters, electric gates and plenty of storage.</p>
+				<hr>
+				<p><span class="header">Address</span> - 33 rue Saint-Florent 67200 Strasbourg</p>
+				<p>Close to shopping, schools, and public transportation (bus and tram).</p>
+				<p>10 mins to the center and 5 mins to access A4 freeway.</p>
+				<a name="map"></a>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2638.739694305327!2d7.721844699999999!3d48.595682800000006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c82470c02ebd%3A0xbb89739f6fbfd95e!2s33+Rue+Saint-Florent%2C+67200+Strasbourg!5e0!3m2!1sfr!2sfr!4v1411420799792" width="100%" height="300" frameborder="0" style="border:0;margin-top:20px;"></iframe>
+				<hr>
+				<a name="contact"></a>
+				<p><span class="header">Contact us</span>
+				<p>For more informations or to set-up a visit, please call <a href="tel:+33612920690">06.12.92.06.90</a> or email <a href="mailto:jmoniatte@gmail.com">jmoniatte@gmail.com</a>.</p>
+				<form id="contactForm" action="http://forms.brace.io/jmoniatte@gmail.com" method="post">
+					<div class="fEntry">
+					    <input type="text" name="name" id="name" placeholder="Your name" style="width:600px;">
+					</div>
+				   	<div class="fEntry">
+				   	    <input type="text" name="_replyto" id="_replyto" placeholder="Your email" style="width:600px;">
+					</div>
+				   	<div class="fEntry">
+				   	    <textarea name="message" id="message" placeholder="Your message"></textarea>
+					</div>
+					<div class="fEntry">
+					    <a href="#" class="button tr-update" data-form="contactForm" data-wait="Sending message..."><i class="fa fa-angle-right"></i><span>Send message</span></a>
+					</div>
+				</form>
+				<script type="text/javascript" charset="utf-8">
+					$(document).ready(function()
+					{
+						$('a.tr-update').click(function(event)
+						{
+							event.preventDefault();
+							$(this).find("span").html($(this).data('wait'));
+							$('form#'+$(this).data('form')).submit();
+						});
+					});
+				</script>
+				<p>No agents.</p>
+			</div>
 		</div>
 	</body>
 </html>
