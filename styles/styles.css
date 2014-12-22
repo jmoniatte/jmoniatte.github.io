@@ -2,9 +2,9 @@
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
 
 *, *:before, *:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
-body {margin:0;padding:0;background-color:#F4F6F8;font-family:'Noto Sans',Arial;color:#333;font-size:100%;}
+body {margin:0;padding:0;background-color:#fff;font-family:'Noto Sans',Arial;color:#333;font-size:100%;}
 
-div#wrap {padding:0;margin:20px auto;max-width:900px;background-color:#fff;box-shadow:7px 7px 5px #888;}
+div#wrap {padding:0;margin:20px auto;max-width:900px;background-color:#fff;}
 
 div#nav {margin:0;padding:0;font-size:20px;}
 div#nav a {color:#fff;text-decoration:none;}
@@ -13,7 +13,7 @@ div#navMap a:hover {color:#999;text-decoration:none;}
 div#navContact {float:right;padding:15px 40px;background-color:#8DBD0C;text-align:center;color:#fff;}
 div#navContact a:hover {color:#2571B8;text-decoration:none;}
 
-#content {padding:20px;}
+#content {padding:20px 0;}
 #content h1 {font-size:40px;margin:0 0 10px 0;text-align:center;}
 #content p {font-size:20px;margin:0 0 20px 0;}
 #content span.header {font-weight:bold;}
@@ -33,26 +33,66 @@ a.button {background:#35aa47;color:#fff;border:solid 1px #359947;}
 a.button i {margin-right:20px;}
 
 /* Slider */
+/*
+ * jQuery FlexSlider v2.2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
 
-table#sliderWrap {max-width:800px;margin:0 auto;border-collapse:collapse;border:1px solid #fff;}
-td.sliderCtrl {width:50px;font-family:'FontAwesome';font-size:50px;text-align:center;vertical-align:middle;cursor: pointer; cursor: hand;}
-td.sliderCtrl i {padding:0;margin:0;}
-td#sliderMain {padding:10px;}
-.slick-slider {max-width:700px;position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
-.slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }
-.slick-list:focus { outline: none; }
-.slick-list.dragging { cursor: pointer; cursor: hand; }
-.slick-slider .slick-track { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
-.slick-track { position: relative; left: 0; top: 0; display: block; }
-.slick-track:before, .slick-track:after { content: ""; display: table; }
-.slick-track:after { clear: both; }
-.slick-loading .slick-track { visibility: hidden; }
-.slick-slide { float: left; height: 100%; min-height: 1px; display: none; }
-.slick-slide img { display: block; }
-.slick-slide.slick-loading img { display: none; }
-.slick-slide.dragging img { pointer-events: none; }
-.slick-initialized .slick-slide { display: block; }
-.slick-loading .slick-slide { visibility: hidden; }
-.slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
+/* Browser Resets
+*********************************/
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
 
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "\0020"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider { margin: 0 0 60px; background: #fff; position: relative; zoom: 1; }
+.flex-viewport { max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
+.loading .flex-viewport { max-height: 300px; }
+.flexslider .slides { zoom: 1; }
+.carousel li { margin-right: 5px; }
+
+/* Direction Nav */
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a  { text-decoration:none; display: block; width: 40px; height: 40px; margin: -20px 0 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; color: rgba(0,0,0,0.8); text-shadow: 1px 1px 0 rgba(255,255,255,0.3); -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }
+.flex-direction-nav .flex-prev { left: -50px; }
+.flex-direction-nav .flex-next { right: -50px; text-align: right; }
+.flexslider:hover .flex-prev { opacity: 0.7; left: 10px; }
+.flexslider:hover .flex-next { opacity: 0.7; right: 10px; }
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
+.flex-direction-nav .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
+.flex-direction-nav a:before  { font-family: "FontAwesome"; font-size: 40px; display: inline-block; content: '\f053'; }
+.flex-direction-nav a.flex-next:before  { content: '\f054'; }
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
+  .flex-direction-nav .flex-next { opacity: 1; right: 10px;}
+}

@@ -7,9 +7,8 @@
 		<meta name="robots" content="index,follow">
 		<link rel="stylesheet" type="text/css" media="all" href="styles/styles.css">
 		<link rel="stylesheet" type="text/css" media="all" href="styles/font-awesome.min.css">
-
 		<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
-		<script type="text/javascript" src="scripts/slick.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery.flexslider-min.js"></script>
 
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -29,47 +28,44 @@
 			</div>
 			<div id="content">
 				<h1>Maison individuelle à Strasbourg</h1>
-				<table id="sliderWrap">
-					<tr>
-						<td id="sliderPrev" class="sliderCtrl"><i class="fa fa-angle-left"></i></td>
-						<td id="sliderMain">
-							<div class="slider">
-								<div><img src="photos/20141116/101.jpg"></div>
-								<div><img src="photos/20141116/102.jpg"></div>
-								<div><img src="photos/20141116/103.jpg"></div>
-								<div><img src="photos/20141116/104.jpg"></div>
-								<div><img src="photos/20141116/105.jpg"></div>
-								<div><img src="photos/20141116/106.jpg"></div>
-								<div><img src="photos/20141116/107.jpg"></div>
-								<div><img src="photos/20141116/108.jpg"></div>
-								<div><img src="photos/20141116/109.jpg"></div>
-								<div><img src="photos/20141116/201.jpg"></div>
-								<div><img src="photos/20141116/202.jpg"></div>
-								<div><img src="photos/20141116/203.jpg"></div>
-								<div><img src="photos/20141116/204.jpg"></div>
-								<div><img src="photos/20141116/205.jpg"></div>
-								<div><img src="photos/20141116/206.jpg"></div>
-								<div><img src="photos/20141116/207.jpg"></div>
-								<div><img src="photos/20141116/208.jpg"></div>
-								<div><img src="photos/20141116/209.jpg"></div>
-								<div><img src="photos/20141116/210.jpg"></div>
-								<div><img src="photos/20141116/211.jpg"></div>
-							</div>
-						</td>
-						<td id="sliderNext" class="sliderCtrl"><i class="fa fa-angle-right"></i></div>
-						</td>
-					</tr>
-				</table>
-
+				<div class="flexslider">
+					<ul class="slides">
+						<li><img src="photos/20141116/101.jpg"></li>
+						<li><img src="photos/20141116/102.jpg"></li>
+						<li><img src="photos/20141116/103.jpg"></li>
+						<li><img src="photos/20141116/104.jpg"></li>
+						<li><img src="photos/20141116/105.jpg"></li>
+						<li><img src="photos/20141116/106.jpg"></li>
+						<li><img src="photos/20141116/107.jpg"></li>
+						<li><img src="photos/20141116/108.jpg"></li>
+						<li><img src="photos/20141116/109.jpg"></li>
+						<li><img src="photos/20141116/201.jpg"></li>
+						<li><img src="photos/20141116/202.jpg"></li>
+						<li><img src="photos/20141116/203.jpg"></li>
+						<li><img src="photos/20141116/204.jpg"></li>
+						<li><img src="photos/20141116/205.jpg"></li>
+						<li><img src="photos/20141116/206.jpg"></li>
+						<li><img src="photos/20141116/207.jpg"></li>
+						<li><img src="photos/20141116/208.jpg"></li>
+						<li><img src="photos/20141116/209.jpg"></li>
+						<li><img src="photos/20141116/210.jpg"></li>
+						<li><img src="photos/20141116/211.jpg"></li>
+					</ul>
+				</div>
 				<script type="text/javascript" charset="utf-8">
-					$(document).ready(function()
-					{
-						$('.slider').slick({
-							arrows: true,
-							prevArrow: $('#sliderPrev'),
-							nextArrow: $('#sliderNext')
-						});
-					});
+				  $(window).load(function() {
+				    $('.flexslider').flexslider({
+				    	animation: "slide",
+				    	selector: ".slides > li",
+				    	slideshow: true,
+				    	slideshowSpeed: 4000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+				    	animationSpeed: 600,            //Integer: Set the speed of animations, in milliseconds
+				    	initDelay: 0,                   //{NEW} Integer: Set an initialization delay, in milliseconds
+				    	randomize: false,
+				    	controlNav: false,
+				    	startAt: 1
+				    });
+				  });
 				</script>
 				<hr>
 				<p><span class="header">Rare opportunité !</span></p>
