@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: http://33ruesaintflorent.com/sitemap.xml
