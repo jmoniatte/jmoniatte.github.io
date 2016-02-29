@@ -7,6 +7,7 @@
 	<body>
     <div id="wrap">
       <h1>User agent parser</h1>
+      <p>Agent: <span id="agent">--</span></p>
       <p>Browser: <span id="browser">--</span></p>
       <p>Device: <span id="device">--</span></p>
       <p>OS: <span id="os">--</span></p>
@@ -14,6 +15,9 @@
       <p>CPU: <span id="cpu">--</span></p>
       <script type="text/javascript">
         $(function(){
+
+          $('#agent').html(navigator.userAgent);
+
           var parser = new UAParser();
           var result = parser.getResult();
 
