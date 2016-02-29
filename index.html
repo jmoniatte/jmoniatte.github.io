@@ -1,11 +1,19 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 	<head>
-
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 	</head>
 	<body>
     <div id="wrap">
-      <p>Static tests</p>
+      <h1>Static tests</h1>
+      <script type="text/javascript">
+        $(function(){
+          window.location = 'perfectbake://web/bake//links/recipes/view/uuid';
+          setTimeout(function() {
+            window.location = 'http://makeitperfectly.com';
+          }, 200);
+        });
+      </script>
     </div>
 	</body>
 </html>
