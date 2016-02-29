@@ -6,13 +6,20 @@
 	</head>
 	<body>
     <div id="wrap">
-      <h1>User agent parser</h1>
+      <h1>User agent</h1>
       <p>Agent: <span id="agent">--</span></p>
+      <h1>Parsed agent</h1>
       <p>Browser: <span id="browser">--</span></p>
       <p>Device: <span id="device">--</span></p>
       <p>OS: <span id="os">--</span></p>
+      <p>OS version: <span id="osversion">--</span></p>
       <p>Engine: <span id="engine">--</span></p>
       <p>CPU: <span id="cpu">--</span></p>
+      <hr>
+      <p>OS Version</p>
+      <p>
+
+
       <script type="text/javascript">
         $(function(){
 
@@ -24,10 +31,9 @@
           $('#browser').html(JSON.stringify(result.browser));         // {name: "Chromium", version: "15.0.874.106"}
           $('#device').html(JSON.stringify(result.device));          // {model: undefined, type: undefined, vendor: undefined}
           $('#os').html(JSON.stringify(result.os));              // {name: "Ubuntu", version: "11.10"}
+          $('#osversion').html(JSON.stringify(result.os.version.split('.')));              // {name: "Ubuntu", version: "11.10"}
           $('#engine').html(JSON.stringify(result.engine));          // "WebKit"
           $('#cpu').html(JSON.stringify(result.cpu));             // "amd64"
-
-
         });
       </script>
     </div>
