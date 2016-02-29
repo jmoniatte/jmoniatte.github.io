@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="scripts/ua-parser.min.js"></script>
+	</head>
+	<body>
+    <div id="wrap">
+      <h1>User agent parser</h1>
+      <p>Browser: <span id="browser">--</span></p>
+      <p>Device: <span id="device">--</span></p>
+      <p>OS: <span id="os">--</span></p>
+      <p>Engine: <span id="engine">--</span></p>
+      <p>CPU: <span id="cpu">--</span></p>
+      <script type="text/javascript">
+        $(function(){
+          var parser = new UAParser();
+          var result = parser.getResult();
+
+          $('#browser').html(JSON.stringify(result.browser));         // {name: "Chromium", version: "15.0.874.106"}
+          $('#device').html(JSON.stringify(result.device));          // {model: undefined, type: undefined, vendor: undefined}
+          $('#os').html(JSON.stringify(result.os));              // {name: "Ubuntu", version: "11.10"}
+          $('#engine').html(JSON.stringify(result.engine));          // "WebKit"
+          $('#cpu').html(JSON.stringify(result.cpu));             // "amd64"
+
+
+        });
+      </script>
+    </div>
+	</body>
+</html>
