@@ -1,1 +1,1 @@
-House for sale website.
+Static tests
