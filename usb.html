@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="robots" content="noindex, nofollow">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>USB</title>
+  </head>
+  <body>
+    <h1>USB test</h1>
+    <textarea id="list" style="width:95%;height:200px;"></textarea>
+    <p><button onclick="requestDevice()">Request device</button></p>
+    <script>
+      function list(item) {
+          return document.getElementById("list").value += item + '\n';
+      }
+      var device;
+      function requestDevice() {
+        new Promise(function(resolve, reject) {
+          list('Button clicked');
+          return resolve();
+        })
+        .then(() => {
+          return navigator.usb.requestDevice({ filters: [] })
+        })
+        .then(d => {
+          if (!d)
+            throw 'Error: No device selected';
+
+          list(d.manufacturerName + ' ' + d.productName);
+          device = d;
+          return device.open();
+        })
+        .catch(error => { list(error); });
+    }
+    </script>
+  </body>
+</html>

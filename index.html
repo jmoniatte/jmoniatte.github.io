@@ -1,93 +1,16 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <style media="screen">
-        #video-background {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -100;
-            transform: translateX(-50%) translateY(-50%);
-            background-size: cover;
-            transition: 1s opacity;
-        }
-
-        .stopfade {
-            opacity: .5;
-        }
-
-        #copy {
-            font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
-            font-weight: 100;
-            background: rgba(0, 0, 0, 0.3);
-            color: white;
-            padding: 2rem;
-            width: 33%;
-            margin: 2rem;
-            float: left;
-            font-size: 1.2rem;
-        }
-
-        #video-control {
-          display: inline-block;
-          padding: .4rem 2rem;
-          border: none;
-          margin: 1rem 0;
-          font-size: 1.3rem;
-          background: rgba(255,255,255,0.23);
-          color: #fff;
-          border-radius: 3px;
-          cursor: pointer;
-          transition: .3s background;
-        }
-        #video-control button:hover {
-           background: rgba(0,0,0,0.5);
-        }
-
-
-
-    </style>
-    <script type="text/javascript">
-        $(function() {
-            var vid = document.getElementById("video-background");
-            var control = document.getElementById("video-control");
-            function playVideo() {
-                vid.play();
-            }
-            function pauseVideo() {
-                vid.pause();
-            }
-            $("#video-control").click(function() {
-                if (vid.paused) {
-                    playVideo();
-                    control.innerHTML = "Shut the faucet off";
-                }
-                else {
-                    pauseVideo();
-                    control.innerHTML = "Thanks. Do not start again";
-                }
-            });
-        });
-    </script>
-</head>
-
-<body>
-    <div id="wrap">
-        <video id="video-background" webkit-playsinline="webkit-playsinline" controls="none" autoplay="autoplay" width="100%" height="100%" loop="loop">
-            <source src="http://perfectweb.s3.amazonaws.com/test/dripping.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
-            <p>This is fallback content to display for user agents that do not support the video tag.</p>
-        </video>
-        <div id="copy">
-            <p>Please stop the dripping.</p>
-            <button id="video-control">Shut the faucet off</button>
-        </div>
-    </div>
-</body>
-
+  <head>
+      <meta charset="utf-8">
+      <meta name="robots" content="noindex, nofollow">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>jmoniatte</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="agent.html">Agent</a></li>
+      <li><a href="usb.html">USB</a></li>
+    </ul>
+  </body>
 </html>
